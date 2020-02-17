@@ -38,8 +38,7 @@ struct ContentView_Previews: PreviewProvider {
 
 struct CardView: View {
     var body: some View {
-        LinearGradient(gradient:Gradient(colors:[Color.yellow,Color.pink]),startPoint:.topLeading, endPoint: .bottomTrailing)
-            
+        LinearGradient(gradient:Gradient(colors:[Color.blue,Color.red]),startPoint:.topLeading, endPoint: .bottomTrailing)
             .cornerRadius(12)
             .padding()
             .frame(height:200)
@@ -90,7 +89,7 @@ struct ListCardView: View {
 struct CellView: View {
     var body: some View {
         HStack {
-            LinearGradient(gradient:Gradient(colors:[Color.yellow,Color.pink]),startPoint:.topLeading, endPoint: .bottomTrailing)
+            LinearGradient(gradient:Gradient(colors:[Color.blue,Color.red]),startPoint:.topLeading, endPoint: .bottomTrailing)
                 .frame(width:72,height:72)
                 .cornerRadius(12)
             
@@ -105,7 +104,7 @@ struct CellView: View {
             VStack{
                 NavigationLink(destination:Text("Coming soon?")){
                     Text("GET")
-                        .fontWeight(.heavy)
+                        .font(.system(.title,design:.serif))
                         .padding(.vertical,8.0)
                         .padding(.horizontal)
                         .background(Color(.systemGray4))
