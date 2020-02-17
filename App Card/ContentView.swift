@@ -59,7 +59,7 @@ struct ListCardView: View {
                 VStack(alignment:.leading){
                     Text("Where Gamers")
                         .font(.largeTitle)
-                        .fontWeight(.black)
+                        .fontWeight(.bold)
                     Text("Find Community")
                         .font(.largeTitle)
                         .fontWeight(.black)
@@ -74,7 +74,7 @@ struct ListCardView: View {
             }
         }
         .padding()
-        .background(Color(.secondarySystemBackground))
+        .background(Color(.systemBlue))
         .cornerRadius(12)
         .padding(isFullScreen ? 0: 16)
         .frame(width: UIScreen.main.bounds.width,height: isFullScreen ? UIScreen.main.bounds.height:572 )
